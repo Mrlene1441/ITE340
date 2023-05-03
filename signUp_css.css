@@ -1,0 +1,105 @@
+/*Css sign up page*/
+
+div.row1{
+
+    background-color: #0045e5;
+    height: 110px;
+}
+
+header h1{
+
+    color: white;
+    float: left;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 30px;
+
+}
+
+/*Nav icon*/
+
+div.row2{
+
+    height: 70px;
+}
+
+img#navicon{
+        display: block;
+        width: 40px;
+        padding-top: 10px;
+    }
+nav.options ul{
+    display: none;
+}
+img#navicon:hover+ul, nav.options ul:hover{
+    display: block;
+}
+nav ul li{
+    width: 8%;
+}
+nav button{
+
+    width: 12%;
+}
+
+
+/*Main content*/
+
+div.row3{
+
+    height: max-content;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+header h2{
+
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 20px;
+
+}
+
+form#singUp{
+
+    font-size: 18px;
+    padding: 10px;
+}
+
+form input{
+
+    margin: 10px;
+}
+
+label#labelcheckbox{
+
+    font-size: 15px;
+
+}
+
+input::placeholder{
+
+    color: red;
+    text-align: right;
+}
+
+div.row4{
+
+    text-align: left;
+    margin-top: 50px;
+}
+
+div a{
+
+    
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+

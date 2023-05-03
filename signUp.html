@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Stream Depot: Sign up. </title>
+   <link rel="stylesheet" href="reset_pg.css" type="text/css" />
+    <link href="grid_structure.css" rel="stylesheet" type="text/css" />
+    <link href="signUp_css.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <div class="row1">
+        <header>
+            <h1>Stream Depot</h1>
+        </header>
+    </div>
+
+    <!--Accessibility icon-->
+    <div class="row2">
+        <nav class="options">
+            <img id="navicon" src="human.png" alt="accessibility icon" />
+                <ul class="submenu">
+                    <button id="fontSizeDecreaseBtn">Decrease Font Size</button>
+                    <br />
+                    <button id="fontSizeIncreaseBtn">Increase Font Size</button>
+                    <br />
+                    <button id="wordSpacingDecreaseBtn">Decrease Word Spacing</button>
+                    <br/>
+                    <button id="wordSpacingIncreaseBtn">Increase Word Spacing</button>
+                    <br/>
+                    <button id="google_translate_element"></button>
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                            new google.translate.TranslateElement(
+                            {pageLanguage: 'en'},
+                            'google_translate_element'
+                            );
+                        } 
+                        </script>
+                 </ul>
+        </nav>
+    </div>
+
+    <!--Sign up form-->
+    <div class="row3">
+        <header>
+            <h2>Sign Up</h2>
+        </header>
+
+        <form id="singUp" action="signUp.php" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="name">Name:</label>
+            <br />
+            <input name="custName" id="name" type="text" placeholder="*" required/>
+            <br />
+            <label for="email">Enter Your Email:</label>
+            <br />
+            <input name="custEmail" id="email" type="email" placeholder="*" required/>
+            <br />
+            <label for="username">Username:</label>
+            <br/>
+            <input name="custUserN" id="username" type="text" placeholder="*" required/>
+            <br/>
+            <label for="password">Password:</label>
+            <br/>
+            <input name="custPass" id="password" type="text" placeholder="*" required/>
+            <br/>
+            <input type="checkbox" id="checkbox" onclick="myFunction()">
+            <label id="labelcheckbox" for="checkbox">Hide Password</label>
+            <br/>
+            <label for="birthday">Birthday: *</label>    
+            <br/>
+            <input name="custBirthday" id="birthday" type="date" required/>
+            <br/>
+            <br/>
+            <input type="submit" />
+        </form>
+    </div>
+
+    <div class="row4">
+        <a href="HCIHomepage.html"> Back </a>
+        <a href="signIn.html" id="next">Sign In</a>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+    <script type="text/javascript" src="WordSpace.js"></script>
+    <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+
+
+</body>
+</html>
